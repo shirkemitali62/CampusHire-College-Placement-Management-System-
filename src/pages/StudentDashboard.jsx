@@ -481,7 +481,7 @@ const StudentDashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-50 premium-page student-dashboard">
       <Navbar />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
@@ -579,10 +579,10 @@ const StudentDashboard = () => {
             TOP STATS
         ============================================== */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-5 mb-8">
 
           {/* CGPA */}
-          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition">
+          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition premium-stat-card">
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
                 <GraduationCap size={23} />
@@ -603,7 +603,7 @@ const StudentDashboard = () => {
           </div>
 
           {/* JOBS */}
-          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition">
+          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition premium-stat-card">
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-xl bg-green-50 text-green-600 flex items-center justify-center">
                 <Briefcase size={23} />
@@ -624,7 +624,7 @@ const StudentDashboard = () => {
           </div>
 
           {/* APPLICATIONS */}
-          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition">
+          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition premium-stat-card">
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center">
                 <TrendingUp size={23} />
@@ -645,7 +645,7 @@ const StudentDashboard = () => {
           </div>
 
           {/* PROFILE */}
-          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition">
+          <div className="bg-white rounded-2xl border border-slate-200 p-5 hover:shadow-md transition premium-stat-card">
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center">
                 <Award size={23} />
@@ -679,7 +679,7 @@ const StudentDashboard = () => {
             PROFILE COMPLETENESS
         ============================================== */}
 
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-8">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-8 premium-panel">
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
 
@@ -859,7 +859,7 @@ const StudentDashboard = () => {
             SKILLS
         ============================================== */}
 
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-8">
+        <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-8 premium-panel">
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5">
 
@@ -947,7 +947,7 @@ const StudentDashboard = () => {
 
           {/* FILTER PANEL */}
 
-          <div className="bg-white border border-slate-200 rounded-2xl p-5 mb-6">
+          <div className="bg-white border border-slate-200 rounded-2xl p-5 mb-6 premium-filter-card">
 
             <div className="flex items-center gap-2 mb-4">
               <Filter
@@ -1160,7 +1160,7 @@ const StudentDashboard = () => {
                 return (
                   <article
                     key={job._id}
-                    className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition"
+                    className="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition premium-job-card"
                   >
 
                     {/* JOB TOP */}
@@ -1712,7 +1712,7 @@ const StudentDashboard = () => {
             FOOTER SUMMARY
         ============================================== */}
 
-        <div className="mt-8 rounded-2xl bg-slate-900 text-white p-6">
+        <div className="mt-8 rounded-2xl bg-slate-900 text-white p-6 premium-progress-card">
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
 
